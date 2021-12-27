@@ -89,7 +89,7 @@ if type(getconnections) ~= 'function' then return fail('Unsupported exploit (mis
 if type(getloadedmodules) ~= 'function' then return fail('Unsupported exploit (misssing "getloadedmodules")') end
 if type(getgc) ~= 'function' then return fail('Unsupported exploit (misssing "getgc")') end
 
-local library = urlLoad("https://raw.githubusercontent.com/wally-rblx/uwuware-ui/main/main.lua")
+local library = urlLoad("https://raw.githubusercontent.com/AToska21/uwuware-ui/main/main.lua")
 
 local framework, scrollHandler
 local counter = 0
@@ -362,20 +362,20 @@ do
 
         local folder = window:AddFolder('Credits') do
             folder:AddLabel({ text = 'Jan - UI library' })
-            folder:AddLabel({ text = 'wally - Script' })
+            folder:AddLabel({ text = 'AToska21 - Updated Script' })
             folder:AddLabel({ text = 'Sezei - Contributor'})
         end
 
-        window:AddLabel({ text = 'Version 1.7e' })
-        window:AddLabel({ text = 'Updated 12/11/21' })
-        window:AddLabel({ text = 'i hate ice bear sometimes' })
+        window:AddLabel({ text = 'Version 1.8a' })
+        window:AddLabel({ text = 'Updated 12/17/21' })
+        window:AddLabel({ text = 'i hate amongst us sometimes' })
       
         window:AddDivider()
         window:AddButton({ text = 'Unload script', callback = function()
             shared._unload()
         end })
         window:AddButton({ text = 'Copy discord', callback = function()
-              setclipboard("https://wally.cool/discord")
+              setclipboard("https://fosscord.toska.cloud/")
         end })
         window:AddDivider()
         window:AddBind({ text = 'Menu toggle', key = Enum.KeyCode.Delete, callback = function() library:Close() end })
